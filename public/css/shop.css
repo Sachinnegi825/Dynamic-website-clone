@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .heading {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin: 40px;
+  }
+  
+  section.main {
+    background: #0000005c;
+  }
+  
+  .main input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 30px;
+    border: none;
+    width: 600px;
+    margin-left: 450px;
+  }
+  
+  .main .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .main .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .main .search-container {
+      float: none;
+    }
+    .main a,
+    .topnav input[type="text"],
+    .main .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .main input[type="text"] {
+      border: 1px solid #ccc;
+    }
+  }
+  
+  .shop .box-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .checked {
+    color: orange;
+  }
+  
+  .shop .box-container1 .box {
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .shop .box-container1 .box img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .shop .box-container1 .box .content {
+    padding: 2rem;
+  }
+  
+  .shop .box-container1 .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .stars {
+    font-size: 25px;
+  }
+  
+  .shop .box-container1 .box .content p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+  }
+  
+  .shop .box-container1 .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+  }
+  
+  .shop .box-container1 .box .content .price {
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+  }
+  
+  .shop .box-container1 .box .content .price span {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+  }
+  
+  .btn {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    margin-left: 80px;
+  }
+  .btn-1 {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    margin-left: 110px;
+  }
+  .btn-2 {
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    margin-left: 620px;
+  }
+  .btn-2:hover {
+    color: #3498db;
+  }
+  .btn-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+  }
+  .btn-2:hover::before {
+    height: 0%;
+  }
+  
+  /*----------------------------------footer------------*/
+  
+  .footer {
+    height: 600px;
+    background-color: rgb(15, 15, 82);
+  }
+  
+  .footer .box-container {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(15, 15, 82);
+  }
+  
+  .footer .box-container .box {
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+    text-align: center;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 30px;
+    padding: 0.7rem 0;
+    color: #fff;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    color: #eee;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    color: #eee;
+    text-decoration: none;
+  }
+  .footer .box-container .box p {
+    font-size: 18px;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(12, 12, 54);
+  }
+  
+  .footer .credit span {
+    color: var(--orange);
+  }
+  
